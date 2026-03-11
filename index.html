@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio | Joey Sportes</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio | Joey Sportes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <canvas id="bg-canvas"></canvas>
+  <canvas id="bg-canvas"></canvas>
 
+  <header>
     <nav>
-        <div class="logo">PORTFOLIO.</div>
-        <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="logo">PORTFOLIO.</div>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">Présentation</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>Salut, je suis <span>Joey Sportes</span></h1>
-            <p>Étudiant en B1 Informatique | Développeur en devenir</p>
-            <a href="#projects" class="btn">Voir mes travaux</a>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="subtitle">Bienvenue sur mon portfolio</p>
+          <h1>Joey <span>Sportes</span></h1>
+          <p class="description">Étudiant en B1 Informatique · Développeur en devenir</p>
+          <a href="#about" class="btn">Me découvrir</a>
         </div>
-    </header>
 
-    <section id="projects">
-        <h2>Mes Projets</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img">Aperçu Projet</div>
-                <div class="project-info">
-                    <h3>Nom du Projet 1</h3>
-                    <p>Description de ton premier succès en code.</p>
-                    <div class="tags">
-                        <span>HTML</span><span>CSS</span><span>JS</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">Aperçu Projet</div>
-                <div class="project-info">
-                    <h3>Nom du Projet 2</h3>
-                    <p>Un script Python ou une base SQL de B1.</p>
-                    <div class="tags">
-                        <span>Python</span><span>SQL</span>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-photo">
+          <img src="IMG_8786v2.png" alt="Photo de Joey Sportes" />
         </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Joey Sportes - Fait avec passion en B1</p>
-    </footer>
+    <section id="about">
+      <h2>Présentation</h2>
+      <div class="about-content">
+        <p>Bonjour, je m'appelle <span class="highlight">Joey Sportes</span>, étudiant en B1 Informatique à Ynov.</p>
+        <p>Passionné par le développement web et la programmation, je progresse chaque jour sur des projets concrets.</p>
+        <p>Curieux, motivé et rigoureux, je cherche à améliorer mes compétences et à relever de nouveaux défis.</p>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="projects">
+      <h2>Mes Projets</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-img">Aperçu Projet</div>
+          <div class="project-info">
+            <h3>Projet 1</h3>
+            <p>Landing page responsive avec animation JavaScript.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">Aperçu Projet</div>
+          <div class="project-info">
+            <h3>Projet 2</h3>
+            <p>Script Python et gestion de données SQL.</p>
+            <div class="tags">
+              <span>Python</span><span>SQL</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Tu peux me contacter à :
+        <a href="mailto:joey.sportes@ynov.com">joey.sportes@ynov.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Joey Sportes - Fait en B1</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
