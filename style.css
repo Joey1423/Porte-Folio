@@ -189,12 +189,144 @@ h2::after {
   font-weight: 700;
 }
 
+/* Parcours scolaire — Timeline */
+#parcours {
+  padding: 100px 10%;
+  background: rgba(10, 18, 35, 0.9);
+}
+
+.timeline {
+  margin-top: 40px;
+  max-width: 680px;
+  position: relative;
+  padding-left: 36px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(to bottom, #38bdf8, rgba(56, 189, 248, 0.1));
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -33px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+  border: 2px solid #0f172a;
+}
+
+.timeline-content {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 20px 22px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(4px);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.timeline-date {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #38bdf8;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.timeline-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 2px;
+}
+
+.parcours-lieu {
+  font-size: 0.83rem;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.timeline-content p:last-child {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* Compétences */
+#skills {
+  padding: 100px 10%;
+  background: rgba(15, 23, 42, 0.85);
+}
+
+.skills-grid {
+  margin-top: 32px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.skill-card {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px 20px;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #f8fafc;
+}
+
+.skill-card p {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
 /* Projets */
 .projects-grid {
   margin-top: 32px;
   display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .project-card {
@@ -211,11 +343,31 @@ h2::after {
 }
 
 .project-img {
-  height: 170px;
+  height: 200px;
+  overflow: hidden;
+  background: #334155;
   display: grid;
   place-items: center;
-  background: #334155;
   color: #94a3b8;
+}
+
+.project-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.05);
 }
 
 .project-info {
