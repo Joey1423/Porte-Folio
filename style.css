@@ -32,7 +32,7 @@ body {
 }
 
 /* Navigation fixe */
-nav {
+header nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -46,26 +46,26 @@ nav {
   backdrop-filter: blur(10px);
 }
 
-.logo {
+header .logo {
   color: #38bdf8;
   font-weight: 800;
   letter-spacing: 1.5px;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
   display: flex;
   gap: 28px;
 }
 
-nav a {
+header nav a {
   color: #f8fafc;
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
-nav a:hover {
+header nav a:hover {
   color: #38bdf8;
 }
 
