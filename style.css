@@ -1,9 +1,11 @@
+/* Reset CSS global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Styles de base pour HTML et body */
 html,
 body {
   width: 100%;
@@ -19,7 +21,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Canvas plein écran */
+/* Canvas en arrière-plan plein écran */
 #bg-canvas {
   position: fixed;
   inset: 0;
@@ -29,7 +31,7 @@ body {
   z-index: 0;
 }
 
-/* Navigation */
+/* Navigation fixe */
 nav {
   position: fixed;
   top: 0;
@@ -67,13 +69,13 @@ nav a:hover {
   color: #38bdf8;
 }
 
-/* Sections */
+/* Styles généraux pour les sections */
 main section {
   position: relative;
   z-index: 1;
 }
 
-/* Hero */
+/* Section Hero */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -147,7 +149,7 @@ main section {
   box-shadow: 0 0 40px rgba(56, 189, 248, 0.3);
 }
 
-/* Blocs de contenu */
+/* Sections de contenu principal */
 #about,
 #projects,
 #contact {
@@ -173,6 +175,7 @@ h2::after {
   margin-top: 8px;
 }
 
+/* Section À propos */
 .about-content {
   max-width: 760px;
   margin-top: 24px;
@@ -189,7 +192,7 @@ h2::after {
   font-weight: 700;
 }
 
-/* Parcours scolaire — Timeline */
+/* Section Parcours scolaire - Timeline */
 #parcours {
   padding: 100px 10%;
   background: rgba(10, 18, 35, 0.9);
@@ -276,7 +279,7 @@ h2::after {
   line-height: 1.5;
 }
 
-/* Compétences */
+/* Section Compétences */
 #skills {
   padding: 100px 10%;
   background: rgba(15, 23, 42, 0.85);
@@ -321,7 +324,7 @@ h2::after {
   line-height: 1.5;
 }
 
-/* Projets */
+/* Section Projets */
 .projects-grid {
   margin-top: 32px;
   display: grid;
@@ -395,7 +398,7 @@ h2::after {
   border-radius: 999px;
 }
 
-/* Contact / Footer */
+/* Section Contact et Footer */
 #contact p {
   margin-top: 16px;
   color: #94a3b8;
@@ -419,7 +422,7 @@ footer {
   background: rgba(15, 23, 42, 0.95);
 }
 
-/* Responsive */
+/* Styles responsives pour les écrans mobiles */
 @media (max-width: 900px) {
   .hero-content {
     grid-template-columns: 1fr;
